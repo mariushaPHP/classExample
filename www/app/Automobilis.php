@@ -18,6 +18,11 @@ class Automobilis extends TranspPriemone{
         $this->svoris = $svoris;
     }
 
+    public function setKaina($kaina)
+    {
+        $this->kaina = $kaina;
+    }
+
     public function setMaxGreitis($greitis){
         $this->maxGreitis = $greitis;
     }

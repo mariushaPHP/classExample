@@ -14,6 +14,11 @@ class Dviratis extends TranspPriemone{
         $this->tipas = $tipas;
     }
 
+    public function setKaina($kaina)
+    {
+        $this->kaina = $kaina;
+    }
+
     public function setTipas($tipas){
         $this->tipas = $tipas;
     }

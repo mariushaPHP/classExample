@@ -16,6 +16,11 @@ class Motociklas extends TranspPriemone{
     }
 
 
+    public function setKaina($kaina)
+    {
+        $this->kaina = $kaina;
+    }
+
     public function setTipas($tipas){
         $this->tipas = $tipas;
     }

@@ -2,7 +2,7 @@
 
 namespace Users;
 
-class TranspPriemone{
+abstract class TranspPriemone{
     protected $modelis;
     protected $marke;
     protected $kaina;
@@ -11,11 +11,11 @@ class TranspPriemone{
     protected $aprasymas;
     protected $ratuSk;
 
-    public function __construct($modelis, $marke)
+    /*public function __construct($modelis, $marke)
     {
         $this->modelis = $modelis;
         $this->marke = $marke;
-    }
+    }*/
     
     public function setModelis($modelis){
         $this->modelis = $modelis;
@@ -23,9 +23,10 @@ class TranspPriemone{
     public function setMarke($marke){
         $this->marke = $marke;
     }
-    public function setKaina($kaina){
+    abstract public function setKaina($kaina);
+    /*{
         $this->kaina = $kaina;
-    }
+    }*/
     public function setSvoris($svoris){
         $this->svoris = $svoris;
     }

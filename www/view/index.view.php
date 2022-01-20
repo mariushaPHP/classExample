@@ -4,8 +4,8 @@
 use Users\Automobilis;
 use Users\Dviratis;
 use Users\Motociklas;
+use Users\Render;
 use Users\Student;
-use Users\TranspPriemone;
 
 ?>
 
@@ -18,16 +18,16 @@ use Users\TranspPriemone;
     <title>Document</title>
 </head>
 <body>
-    <!--<?php
+    <?php
         $user1 = new  Student("Jonas", 'jonas@one.lt', 'bomzas');
         $user1->addDescription('muladiec');
         $user1->addSubject('PHP');
     ?>
     <ul>
-        <?php foreach($user1->getUserData() as $user) :?>
-            <li><?= $user; ?></li>
-        <?php endforeach; ?>
-    </ul> -->
+        <?php
+            Render::showAll($user1->getUserData());
+        ?>
+    </ul> 
 
 
 
